@@ -6,32 +6,18 @@
     <title>Tutorial</title>
     <link rel="stylesheet" href="assets/css/style.css" />
 
-    <!-- TAILWIND CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
-
     <!-- --------- UNICONS ---------- -->
     <link
       rel="stylesheet"
       href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
     />
-    <script>
-      function copyToClipboard(id) {
-        const codeElement = document.getElementById(id);
-        const text = codeElement.innerText;
-        navigator.clipboard
-          .writeText(text)
-          .then(() => {
-            alert("Code copied to clipboard!");
-          })
-          .catch((err) => {
-            console.error("Failed to copy text: ", err);
-          });
-      }
-    </script>
+    <!-- TAILWIND CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
     <div class="container">
       <!-- NAVBAR -->
+
       <nav id="header">
         <div class="nav-logo">
           <p class="nav-name">TUTORIALLLLLLLL!!!!</p>
@@ -48,7 +34,7 @@
               <div class="circle"></div>
             </li>
             <li class="nav_list">
-              <a href="location.html" class="nav-link active-link">API</a>
+              <a href="location.html" class="nav-link">API</a>
               <div class="circle"></div>
             </li>
             <li class="nav_list">
@@ -60,12 +46,12 @@
               <div class="circle"></div>
             </li>
             <li class="nav_list">
-              <a href="#" class="nav-link">Latihan</a>
+              <a href="latihan.html" class="nav-link active-link">Latihan</a>
               <div class="circle"></div>
             </li>
             <div class="nav-button">
               <a
-                class="group relative inline-flex items-center overflow-hidden rounded bg-cyan-800 px-8 py-3 text-white focus:outline-none focus:ring active:bg-cyan-800"
+                class="group relative inline-flex items-center overflow-hidden rounded bg-cyan-800 px-8 py-3 text-white focus:outline-none focus:ring active: bg-cyan-800"
                 href="index.html"
               >
                 <span
@@ -86,6 +72,7 @@
                     />
                   </svg>
                 </span>
+
                 <span
                   class="text-sm font-medium transition-all group-hover:ms-4"
                 >
@@ -98,91 +85,11 @@
       </nav>
     </div>
 
-    <!-- HERO SECTION -->
+    <!-- MAIN CONTENT -->
     <main class="wrapper">
-      <section>
-        <div
-          class="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16"
-        >
-          <div class="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16 mt-10">
-            <div
-              class="relative h-64 overflow-hidden rounded-lg sm:h-80 lg:order-last lg:h-full"
-            >
-              <img
-                alt=""
-                src="assets/images/map.jpg"
-                class="absolute inset-0 h-50 w-100 object-cover mt-20"
-              />
-            </div>
-
-            <div class="lg:py-24">
-              <h2 class="text-3xl font-bold sm:text-2xl text-left">
-                Apa itu API?
-              </h2>
-
-              <p class="mt-4 text-gray-600">
-                API lokasi di HTML, atau lebih dikenal sebagai
-                <strong>Geolocation API</strong> , adalah antarmuka yang
-                memungkinkan aplikasi web untuk mendapatkan informasi lokasi
-                geografis pengguna. API ini bisa memberikan data lokasi seperti
-                latitude (garis lintang) dan longitude (garis bujur) perangkat
-                pengguna. Informasi ini dapat digunakan dalam aplikasi web yang
-                membutuhkan data lokasi, seperti peta, cuaca lokal, layanan
-                berbasis lokasi, dan lain-lain.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section>
-        <h2 class="text-3xl font-bold sm:text-xl text-center mt-20">
-          Contoh API Geolocation
-        </h2>
-        <div class="top-header">
-          <p>Mendapatkan garis lintang dan bujur dari posisi pengguna</p>
-        </div>
-        <div class="relative bg-stone-500 p-4 rounded mt-4 text-white">
-          <pre><pre>
-            const myElement = document.getElementById("demo");
-            
-            function getLocation() {
-              if (navigator.geolocation) {
-                navigator.geolocation.getCurrentPosition(showPosition);
-              } else {
-                myElement.innerHTML = "Geolocation is not supported by this browser.";
-              }
-            }
-            
-            function showPosition(position) {
-              myElement.innerHTML = "Latitude: " + position.coords.latitude +
-              "&lt;br&gt;Longitude: " + position.coords.longitude;
-            }
-            </pre>
-            </pre>
-          <button
-            onclick="copyToClipboard('code1')"
-            class="absolute top-2 right-2 text-sm bg-gray-700 text-white px-2 py-1 rounded hover:bg-gray-600 focus:outline-none"
-          >
-            Copy
-          </button>
-        </div>
-      </section>
-      <section>
-        <h2 class="text-3xl font-bold sm:text-xl text-center mt-20">
-          API Geolocation dari Pihak Ketiga
-        </h2>
-        <div class="top-header">
-          <p>YouTube API - Allows you to display videos on a web site.</p>
-          <p>Twitter API - Allows you to display Tweets on a web site.</p>
-          <p>
-            Facebook API - Allows you to display Facebook info on a web site.
-          </p>
-        </div>
-      </section>
+      <!-- START -->
     </main>
     <!-- --------------- FOOTER --------------- -->
-
     <footer>
       <div class="top-footer">
         <p>Dany Prasetyo Adji</p>
