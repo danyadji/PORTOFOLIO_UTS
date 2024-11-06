@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tutorial</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <!-- TAILWIND CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      function copyToClipboard(id) {
+        const codeElement = document.getElementById(id);
+        const text = codeElement.innerText;
+        navigator.clipboard
+          .writeText(text)
+          .then(() => {
+            alert("Code copied to clipboard!");
+          })
+          .catch((err) => {
+            console.error("Failed to copy text: ", err);
+          });
+      }
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <!-- NAVBAR -->
+      <nav id="header">
+        <div class="nav-logo">
+          <p class="nav-name">TUTORIALLLLLLLL!!!!</p>
+          <span>.</span>
+        </div>
+        <div class="nav-menu" id="myNavMenu">
+          <ul class="nav_menu_list">
+            <li class="nav_list">
+              <a href="form.html" class="nav-link active-link">Form</a>
+              <div class="circle"></div>
+            </li>
+            <li class="nav_list">
+              <a href="table.html" class="nav-link">Table</a>
+              <div class="circle"></div>
+            </li>
+            <li class="nav_list">
+              <a href="#" class="nav-link">API</a>
+              <div class="circle"></div>
+            </li>
+            <li class="nav_list">
+              <a href="#" class="nav-link">Canvas</a>
+              <div class="circle"></div>
+            </li>
+            <li class="nav_list">
+              <a href="#" class="nav-link">Deploy</a>
+              <div class="circle"></div>
+            </li>
+            <div class="nav-button">
+              <a
+                class="group relative inline-flex items-center overflow-hidden rounded bg-cyan-800 px-8 py-3 text-white focus:outline-none focus:ring active:bg-cyan-800"
+                href="index.html"
+              >
+                <span
+                  class="absolute -start-full transition-all group-hover:start-4"
+                >
+                  <svg
+                    class="size-5 rtl:rotate-180"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M17 8l4 4m0 0l-4 4m4-4H3"
+                    />
+                  </svg>
+                </span>
+                <span
+                  class="text-sm font-medium transition-all group-hover:ms-4"
+                >
+                  Back To Home
+                </span>
+              </a>
+            </div>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <!-- HERO SECTION -->
+    <main class="wrapper">
+      <section>
+        <div
+          class="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16"
+        >
+          <div class="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16 mt-10">
+            <div
+              class="relative h-64 overflow-hidden rounded-lg sm:h-80 lg:order-last lg:h-full"
+            >
+              <img
+                alt=""
+                src="assets/images/form.png"
+                class="absolute inset-0 h-50 w-100 object-cover mt-20"
+              />
+            </div>
+
+            <div class="lg:py-24">
+              <h2 class="text-3xl font-bold sm:text-2xl text-left">
+                Form di HTML
+              </h2>
+
+              <p class="mt-4 text-gray-600">
+                Form HTML memungkinkan pengembang mengumpulkan data dari
+                pengguna melalui elemen input yang terstruktur dan mudah diisi.
+                Dengan form, informasi yang beragam dapat dikumpulkan secara
+                sistematis, memudahkan validasi dan pengolahan data. Selain itu,
+                penggunaan berbagai atribut dan CSS dapat memperindah tampilan
+                form agar lebih menarik dan sesuai dengan kebutuhan desain.
+              </p>
+
+              <a
+                href="#"
+                class="mt-8 inline-block rounded bg-cyan-800 px-12 py-3 text-sm font-medium text-white transition hover:bg-cyan-700 focus:outline-none focus:ring focus:ring-yellow-400"
+              >
+                Coba Sekarang!
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <h2 class="text-3xl font-bold sm:text-xl text-center mt-20">
+          Cara Membuat Form!
+        </h2>
+        <div class="top-header">
+          <p>
+            Untuk membuat tabel dasar dalam HTML, Anda dapat menggunakan elemen
+            &lt;table&gt; yang berfungsi sebagai wadah utama. Baris dalam tabel
+            dibuat menggunakan elemen &lt;tr&gt; (table row), sedangkan sel-sel
+            dalam baris tersebut menggunakan elemen &lt;td&gt; (table data)
+            untuk isi data dan &lt;th&gt; (table header) untuk judul kolom. Agar
+            tabel terlihat lebih rapi, Anda bisa menambahkan atribut seperti
+            border untuk memberi garis tepi pada tabel, sehingga memudahkan
+            dalam pembacaan data yang ditampilkan.
+          </p>
+        </div>
+        <!-- step 1 -->
+        <div>
+          <div class="max-w-2xl mx-auto">
+            <!-- Step 1 -->
+            <div class="mb-8">
+              <h2 class="text-xl font-semibold mb-4">
+                1. Mulai dengan Elemen
+                <span class="text-gray-900">&lt;form&gt;</span>
+              </h2>
+              <ul class="list-disc list-inside">
+                <p>test</p>
+              </ul>
+              <div class="relative bg-stone-500 p-4 rounded mt-4">
+                <pre><code id="code1" class="text-white">&lt;form action="submit_form.php" method="POST"&gt;</code></pre>
+                <!-- Copy Button -->
+                <button
+                  onclick="copyToClipboard('code1')"
+                  class="absolute top-2 right-2 text-sm bg-gray-700 text-white px-2 py-1 rounded hover:bg-gray-600 focus:outline-none"
+                >
+                  Copy
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- step 2 -->
+        <div>
+          <div class="max-w-2xl mx-auto">
+            <!-- Step 1 -->
+            <div class="mb-8">
+              <h2 class="text-xl font-semibold mb-4">
+                1. Mulai dengan Elemen
+                <span class="text-gray-900">&lt;form&gt;</span>
+              </h2>
+              <ul class="list-disc list-inside">
+                <p>test</p>
+              </ul>
+              <div class="relative bg-stone-500 p-4 rounded mt-4">
+                <pre><code id="code1" class="text-white">&lt;form action="submit_form.php" method="POST"&gt;</code></pre>
+                <!-- Copy Button -->
+                <button
+                  onclick="copyToClipboard('code1')"
+                  class="absolute top-2 right-2 text-sm bg-gray-700 text-white px-2 py-1 rounded hover:bg-gray-600 focus:outline-none"
+                >
+                  Copy
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- step 3 -->
+        <div>
+          <div class="max-w-2xl mx-auto">
+            <div class="mb-8">
+              <h2 class="text-xl font-semibold mb-4">
+                1. Mulai dengan Elemen
+                <span class="text-gray-900">&lt;form&gt;</span>
+              </h2>
+              <ul class="list-disc list-inside">
+                <p>test</p>
+              </ul>
+              <div class="relative bg-stone-500 p-4 rounded mt-4">
+                <pre><code id="code1" class="text-white">&lt;form action="submit_form.php" method="POST"&gt;</code></pre>
+                <!-- Copy Button -->
+                <button
+                  onclick="copyToClipboard('code1')"
+                  class="absolute top-2 right-2 text-sm bg-gray-700 text-white px-2 py-1 rounded hover:bg-gray-600 focus:outline-none"
+                >
+                  Copy
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- step 4 -->
+        <div>
+          <div class="max-w-2xl mx-auto">
+            <div class="mb-8">
+              <h2 class="text-xl font-semibold mb-4">
+                1. Mulai dengan Elemen
+                <span class="text-gray-900">&lt;form&gt;</span>
+              </h2>
+              <ul class="list-disc list-inside">
+                <p>test</p>
+              </ul>
+              <div class="relative bg-stone-500 p-4 rounded mt-4">
+                <pre><code id="code1" class="text-white">&lt;form action="submit_form.php" method="POST"&gt;</code></pre>
+                <!-- Copy Button -->
+                <button
+                  onclick="copyToClipboard('code1')"
+                  class="absolute top-2 right-2 text-sm bg-gray-700 text-white px-2 py-1 rounded hover:bg-gray-600 focus:outline-none"
+                >
+                  Copy
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- step 5 -->
+        <div>
+          <div class="max-w-2xl mx-auto">
+            <!-- Step 1 -->
+            <div class="mb-8">
+              <h2 class="text-xl font-semibold mb-4">
+                1. Mulai dengan Elemen
+                <span class="text-gray-900">&lt;form&gt;</span>
+              </h2>
+              <ul class="list-disc list-inside">
+                <p>test</p>
+              </ul>
+              <div class="relative bg-stone-500 p-4 rounded mt-4">
+                <pre><code id="code1" class="text-white">&lt;form action="submit_form.php" method="POST"&gt;</code></pre>
+                <!-- Copy Button -->
+                <button
+                  onclick="copyToClipboard('code1')"
+                  class="absolute top-2 right-2 text-sm bg-gray-700 text-white px-2 py-1 rounded hover:bg-gray-600 focus:outline-none"
+                >
+                  Copy
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
