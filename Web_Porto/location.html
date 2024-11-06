@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tutorial</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <!-- TAILWIND CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- --------- UNICONS ---------- -->
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
+    />
+    <script>
+      function copyToClipboard(id) {
+        const codeElement = document.getElementById(id);
+        const text = codeElement.innerText;
+        navigator.clipboard
+          .writeText(text)
+          .then(() => {
+            alert("Code copied to clipboard!");
+          })
+          .catch((err) => {
+            console.error("Failed to copy text: ", err);
+          });
+      }
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <!-- NAVBAR -->
+      <nav id="header">
+        <div class="nav-logo">
+          <p class="nav-name">TUTORIALLLLLLLL!!!!</p>
+          <span>.</span>
+        </div>
+        <div class="nav-menu" id="myNavMenu">
+          <ul class="nav_menu_list">
+            <li class="nav_list">
+              <a href="form.html" class="nav-link">Form</a>
+              <div class="circle"></div>
+            </li>
+            <li class="nav_list">
+              <a href="table.html" class="nav-link">Table</a>
+              <div class="circle"></div>
+            </li>
+            <li class="nav_list">
+              <a href="location.html" class="nav-link active-link">API</a>
+              <div class="circle"></div>
+            </li>
+            <li class="nav_list">
+              <a href="canvas.html" class="nav-link">Canvas</a>
+              <div class="circle"></div>
+            </li>
+            <li class="nav_list">
+              <a href="deploy.html" class="nav-link">Deploy</a>
+              <div class="circle"></div>
+            </li>
+            <li class="nav_list">
+              <a href="deploy.html" class="nav-link">Latihan</a>
+              <div class="circle"></div>
+            </li>
+            <div class="nav-button">
+              <a
+                class="group relative inline-flex items-center overflow-hidden rounded bg-cyan-800 px-8 py-3 text-white focus:outline-none focus:ring active:bg-cyan-800"
+                href="index.html"
+              >
+                <span
+                  class="absolute -start-full transition-all group-hover:start-4"
+                >
+                  <svg
+                    class="size-5 rtl:rotate-180"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M17 8l4 4m0 0l-4 4m4-4H3"
+                    />
+                  </svg>
+                </span>
+                <span
+                  class="text-sm font-medium transition-all group-hover:ms-4"
+                >
+                  Back To Home
+                </span>
+              </a>
+            </div>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <!-- HERO SECTION -->
+    <main class="wrapper"></main>
+    <!-- --------------- FOOTER --------------- -->
+
+    <footer>
+      <div class="top-footer">
+        <p>Dany Prasetyo Adji</p>
+      </div>
+      <div class="middle-footer">
+        <ul class="footer-menu">
+          <li class="footer_menu_list">
+            <a href="#home">Home</a>
+          </li>
+          <li class="footer_menu_list">
+            <a href="#about">About</a>
+          </li>
+          <li class="footer_menu_list">
+            <a href="#projects">Projects</a>
+          </li>
+          <li class="footer_menu_list">
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-social-icons">
+        <div class="icon">
+          <a href="https://www.instagram.com/danyprstt/"
+            ><i class="uil uil-instagram"></i
+          ></a>
+        </div>
+        <div class="icon">
+          <a href="https://www.linkedin.com/in/dany-prasetyo-adji-135153251/"
+            ><i class="uil uil-linkedin-alt"></i
+          ></a>
+        </div>
+        <div class="icon">
+          <a href="https://dribbble.com/danyadji"
+            ><i class="uil uil-dribbble"></i
+          ></a>
+        </div>
+        <div class="icon">
+          <a href="https://github.com/danyadji"
+            ><i class="uil uil-github-alt"></i
+          ></a>
+        </div>
+        <div class="icon">
+          <a href="https://github.com/danyadji"
+            ><i class="uil uil-github-alt"></i
+          ></a>
+        </div>
+      </div>
+      <div class="bottom-footer">
+        <p>
+          Copyright &copy;
+          <a href="#home" style="text-decoration: none">Danyadji</a> - All
+          rights reserved
+        </p>
+      </div>
+    </footer>
+
+    <!-- ----- TYPING JS Link ----- -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <!-- ----- SCROLL REVEAL JS Link----- -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- ----- MAIN JS ----- -->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
